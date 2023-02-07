@@ -1,6 +1,6 @@
 # ArduinoWeatherStation
 
-This is the code for an ###Arduino Weather Station using these external components :
+This is the code for an ### Arduino Weather Station using these external components :
 - A gps *NEO-6m*
 - A MicroSD card adapter
 - A barometric Sensor *GY-68*
