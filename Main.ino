@@ -24,7 +24,7 @@ void setup(){
   pinMode(10, OUTPUT);
   if (!SD.begin(SDCARD_CS_PIN)) {}
   File file = SD.open("Data.txt", FILE_WRITE);
-  file.println()
+  file.println();
   file.println("Date;Hour;altitude(GPS);altitude(CPT);gap;pressure;latitude;longitude;temperature");
   file.flush();
   file.close();
