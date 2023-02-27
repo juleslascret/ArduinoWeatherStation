@@ -18,6 +18,7 @@ char TimeWithoutSec[] = "00:00";
 char Date[] = "00/00/2000";
 byte last_second, Second, Minute, Hour, Day, Month;
 int Year;
+float qnh = 102700;
 
 void setup(){
   pinMode(10, OUTPUT);
@@ -72,9 +73,9 @@ static void sdcard() {
   file.print(";");
   file.print(gps.altitude.meters(), 0);
   file.print(";");
-  file.print(bmp.readAltitude(100600), 0);
+  file.print(bmp.readAltitude(qnh), 0);
   file.print(";");
-  float ecart = (abs(gps.altitude.meters() - bmp.readAltitude(100600)) / gps.altitude.meters())*100;
+  float ecart = (abs(gps.altitude.meters() - bmp.readAltitude(qnh)) / gps.altitude.meters())*100;
   file.print(ecart);
   file.print("%");
   file.print(";");
@@ -139,7 +140,7 @@ static void displayInfo(){
   lcd.setCursor(5, 0);
   lcd.print("Cpt");
   lcd.setCursor(5, 1);
-  lcd.print(bmp.readAltitude(100600), 0);
+  lcd.print(bmp.readAltitude(qnh), 0);
   lcd.setCursor(10, 0);
   lcd.print("Hour");
   lcd.setCursor(10, 1);
