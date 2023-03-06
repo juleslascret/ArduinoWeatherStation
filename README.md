@@ -13,7 +13,7 @@ writes in a .txt file (stored in the MicroSD card) all this data every second. I
 
 ### Some Pictures :
 
-![Imgur](https://i.imgur.com/cRvQRQZ.jpg)
+![Imgur](https://i.imgur.com/cRvQRQZ.jpg | width=100)
 ![Imgur](https://i.imgur.com/hTr37KB.jpg)
 ![Imgur](https://i.imgur.com/I3wEVip.jpg)
 ![Imgur](https://i.imgur.com/eHRCKYs.jpg)
